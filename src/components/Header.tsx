@@ -127,29 +127,6 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              
-              <div className="px-3 py-2 border-t border-gray-200 dark:border-gray-700">
-                <div className="flex items-center space-x-2">
-                  <Globe className="w-4 h-4 text-gray-500" />
-                  <span className="text-sm text-gray-500">Idioma:</span>
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        changeLanguage(lang.code);
-                        setIsMenuOpen(false);
-                      }}
-                      className={`px-2 py-1 text-xs rounded ${
-                        currentLanguage === lang.code
-                          ? 'bg-primary-600 text-white'
-                          : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                      }`}
-                    >
-                      {lang.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         )}
