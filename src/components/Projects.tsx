@@ -122,7 +122,7 @@ const ProjectCard: FC<ProjectCardProps> = function ProjectCard({ project, curren
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary flex-1 flex items-center justify-center"
+            className="btn-secondary flex-1 flex items-center justify-center text-sm"
           >
             <Github className="w-5 h-5 mr-2" />
             {t('projects.viewCode')}
@@ -132,7 +132,7 @@ const ProjectCard: FC<ProjectCardProps> = function ProjectCard({ project, curren
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary flex-1 flex items-center justify-center"
+              className="btn-primary flex-1 flex items-center justify-center text-sm"
             >
               <FiGlobe className="w-5 h-5 mr-2" />
               {t('projects.viewOnline')}

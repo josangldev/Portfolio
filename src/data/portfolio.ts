@@ -17,12 +17,12 @@ export const projects: Project[] = [
   {
     id: "1",
     title: {
-      es: "Japón Interactivo",
-      en: "Interactive Japan"
+      es: "Japón Web",
+      en: "Japan Web"
     },
     description: {
-      es: "Web dedicada a los festivales tradicionales y la gastronomía japonesa, ofreciendo una experiencia cultural inmersiva con información detallada y diseño atractivo.",
-      en: "Website dedicated to traditional festivals and Japanese gastronomy, offering an immersive cultural experience with detailed information and attractive design."
+      es: "Sitio web informativo sobre festivales tradicionales y gastronomía japonesa, con modo claro/oscuro, diseño responsive y animaciones. Desarrollado con Vite y TailwindCSS.",
+      en: "Informative website about traditional Japanese festivals and gastronomy, with dark/light mode, responsive design and animations. Built with Vite and TailwindCSS."
     },
     image: "/src/assets/japan-home.webp",
     images: [
@@ -32,18 +32,19 @@ export const projects: Project[] = [
       "/src/assets/japan-comidas.webp"
     ],
     technologies: ["HTML", "Tailwind CSS", "JavaScript"],
-    githubUrl: "https://github.com/josangldev/japon-interactivo",
+    githubUrl: "https://github.com/josangldev/japon-web",
+    liveUrl: "https://japon-web.vercel.app/",
     featured: false
   },
   {
     id: "2",
     title: {
-      es: "Pokédex Kanto",
-      en: "Kanto Pokédex"
+      es: "Pokemon Kanto",
+      en: "Pokemon Kanto"
     },
     description: {
-      es: "Aplicación interactiva que incluye una Pokédex completa con estadísticas detalladas, trivial de Pokémon y música de fondo para una experiencia inmersiva.",
-      en: "Interactive application that includes a complete Pokédex with detailed statistics, Pokémon trivia and background music for an immersive experience."
+      es: "Pokédex interactiva de la región Kanto con estadísticas base, trivial de Pokémon y música de fondo. Inspirada en la Game Boy, con diseño retro, responsive y funcionalidades avanzadas.",
+      en: "Interactive Pokédex of the Kanto region with base stats, Pokémon trivia and background music. Game Boy-inspired, retro design, responsive and advanced features."
     },
     image: "/src/assets/pokemon-home.webp",
     images: [
@@ -53,7 +54,8 @@ export const projects: Project[] = [
       "/src/assets/pokemon-trivial.webp"
     ],
     technologies: ["HTML", "Sass", "JavaScript"],
-    githubUrl: "https://github.com/josangldev/pokedex-kanto",
+    githubUrl: "https://github.com/josangldev/pokemon-kanto",
+    liveUrl: "https://pokemon-kanto.vercel.app/",
     featured: false
   },
   {
@@ -63,44 +65,46 @@ export const projects: Project[] = [
       en: "Dashboard"
     },
     description: {
-      es: "Proyecto para añadir tareas diarias o semanales y visualizarlas con gráficos (Recharts, date-fns). Incluye modo claro y oscuro, y traducción completa al inglés.",
-      en: "Project to add daily or weekly tasks and visualize them with charts (Recharts, date-fns). Includes light and dark mode, and full English translation."
+      es: "Gestor de tareas semanal con gráficos interactivos, modo claro/oscuro, traducción ES/EN y diseño responsive. Desarrollado con React, Vite, TailwindCSS y Recharts.",
+      en: "Weekly task manager with interactive charts, light/dark mode, ES/EN translation and responsive design. Built with React, Vite, TailwindCSS and Recharts."
     },
     image: "/src/assets/Dashboard-home.webp",
     images: [
       "/src/assets/Dashboard-home.webp"
     ],
     technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/josangldev/finance-dashboard",
+    githubUrl: "https://github.com/josangldev/dashboard",
+    liveUrl: "https://dashboard-sage-tau.vercel.app/",
     featured: true
   },
   {
     id: "4",
     title: {
-      es: "eShop",
-      en: "eShop"
+      es: "e-Commerce",
+      en: "e-Commerce"
     },
     description: {
-      es: "Tienda online desarrollada con React y TypeScript. Utiliza Context API para el manejo global del carrito y ESLint con TypeScript ESLint para mantener la calidad del código. Incluye filtros y barra de búsqueda, simulación de carrito de compra e inicio de sesión de usuario.",
-      en: "Online store built with React and TypeScript. Uses Context API for global cart management and ESLint with TypeScript ESLint to ensure code quality. Features search filters, search bar, simulated shopping cart, and user login."
+      es: "Tienda online moderna y responsive con filtros por precio y tipo de ropa, carrito persistente, modo claro/oscuro y animaciones. Desarrollada con React, TypeScript, Vite y TailwindCSS.",
+      en: "Modern and responsive online store with filters by price and clothing type, persistent cart, light/dark mode and animations. Built with React, TypeScript, Vite and TailwindCSS."
     },
     image: "/src/assets/eshop-home.webp",
     images: [
       "/src/assets/eshop-home.webp"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/josangldev/eshop",
+    githubUrl: "https://github.com/josangldev/ecommerce",
+    liveUrl: "https://e-commerce-two-xi-25.vercel.app/",
     featured: true
   },
   {
     id: "5",
     title: {
-      es: "Portfolio Personal",
-      en: "Personal Portfolio"
+      es: "Portfolio",
+      en: "Portfolio"
     },
     description: {
-      es: "Portfolio profesional desarrollado con React, TypeScript y Tailwind CSS. Incluye diseño responsive, modo oscuro, animaciones suaves y una experiencia de usuario moderna.",
-      en: "Professional portfolio developed with React, TypeScript and Tailwind CSS. Includes responsive design, dark mode, smooth animations and a modern user experience."
+      es: "Portfolio personal, responsive y optimizado, construido con React, TypeScript y Tailwind CSS. Incluye animaciones, modo oscuro, internacionalización, formulario de contacto funcional y una experiencia de usuario profesional.",
+      en: "Personal portfolio, responsive and optimized, built with React, TypeScript and Tailwind CSS. Includes animations, dark mode, internationalization, functional contact form and a professional user experience."
     },
     image: "/src/assets/portfolio-home.webp",
     images: [
@@ -109,6 +113,7 @@ export const projects: Project[] = [
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/josangldev/portfolio",
+    liveUrl: "https://portfolio-ecru-six-42.vercel.app/",
     featured: false
   }
 ];
