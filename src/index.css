@@ -15,7 +15,6 @@
     font-family: 'Poppins', system-ui, sans-serif;
   }
 
-  /* Transiciones suaves para todos los elementos */
   * {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,7 +43,6 @@
     @apply bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent;
   }
 
-  /* Estilos específicos para el modo oscuro */
   .dark .card {
     @apply shadow-gray-900/20;
   }
