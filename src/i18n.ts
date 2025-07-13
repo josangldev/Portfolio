@@ -130,20 +130,15 @@ const resources = {
 };
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
+    lng: 'es',
     fallbackLng: 'es',
     debug: false,
     
     interpolation: {
       escapeValue: false,
-    },
-    
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
     },
   });
 
