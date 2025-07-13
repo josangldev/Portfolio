@@ -4,14 +4,22 @@ import { useTheme } from '../hooks/useTheme';
 import { useLanguage } from '../hooks/useLanguage';
 import { useTranslation } from 'react-i18next';
 
+// Componente Header: barra de navegación principal con selector de idioma, modo oscuro y menú responsive
 const Header = () => {
+  // Estado para el menú móvil
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Estado para el dropdown de idioma
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  // Hook para tema oscuro/claro
   const { isDark, toggleTheme } = useTheme();
+  // Hook para idioma actual y cambio de idioma
   const { currentLanguage, changeLanguage } = useLanguage();
+  // Traducciones
   const { t } = useTranslation();
+  // Referencia para detectar clics fuera del selector de idioma
   const languageRef = useRef<HTMLDivElement>(null);
 
+  // Efecto: cerrar el dropdown de idioma si se hace clic fuera
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (languageRef.current && !languageRef.current.contains(event.target as Node)) {
@@ -25,6 +33,7 @@ const Header = () => {
     };
   }, []);
 
+  // Elementos de navegación
   const navItems = [
     { name: t('nav.home'), href: '#home' },
     { name: t('nav.about'), href: '#about' },
@@ -33,6 +42,7 @@ const Header = () => {
     { name: t('nav.contact'), href: '#contact' },
   ];
 
+  // Idiomas disponibles
   const languages = [
     { code: 'es', name: t('language.es') },
     { code: 'en', name: t('language.en') },
@@ -42,13 +52,14 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
       <div className="container-main">
         <div className="flex justify-between items-center h-16">
-
+          {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="text-2xl font-bold gradient-text">
               JosanglDev
             </a>
           </div>
 
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <a
@@ -61,16 +72,10 @@ const Header = () => {
             ))}
           </nav>
 
+          {/* Controls */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden icon-btn"
-              aria-label="Toggle mobile menu"
-            >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-
-            <div className="relative hidden md:block" ref={languageRef}>
+            {/* Language Selector */}
+            <div className="relative" ref={languageRef}>
               <button
                 onClick={() => setIsLanguageOpen(!isLanguageOpen)}
                 className="icon-btn space-x-1"
@@ -104,6 +109,7 @@ const Header = () => {
               )}
             </div>
 
+            {/* Dark Mode Toggle */}
             <button
               onClick={toggleTheme}
               className="icon-btn"
@@ -111,9 +117,19 @@ const Header = () => {
             >
               {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden icon-btn"
+              aria-label="Toggle mobile menu"
+            >
+              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
         </div>
 
+        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200 dark:border-gray-700">
@@ -128,6 +144,7 @@ const Header = () => {
                 </a>
               ))}
               
+              {/* Mobile Language Selector */}
               <div className="px-3 py-2 border-t border-gray-200 dark:border-gray-700">
                 <div className="flex items-center space-x-2">
                   <Globe className="w-4 h-4 text-gray-500" />
@@ -148,18 +165,6 @@ const Header = () => {
                       {lang.name}
                     </button>
                   ))}
-                </div>
-                <div className="flex items-center space-x-2 mt-4">
-                  <button
-                    onClick={toggleTheme}
-                    className="icon-btn"
-                    aria-label="Toggle dark mode"
-                  >
-                    {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-                  </button>
-                  <span className="text-sm text-gray-500">
-                    {isDark ? 'Claro' : 'Oscuro'}
-                  </span>
                 </div>
               </div>
             </div>
