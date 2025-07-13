@@ -149,6 +149,18 @@ const Header = () => {
                     </button>
                   ))}
                 </div>
+                <div className="flex items-center space-x-2 mt-4">
+                  <button
+                    onClick={toggleTheme}
+                    className="icon-btn"
+                    aria-label="Toggle dark mode"
+                  >
+                    {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                  </button>
+                  <span className="text-sm text-gray-500">
+                    {isDark ? 'Claro' : 'Oscuro'}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
