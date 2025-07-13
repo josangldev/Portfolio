@@ -2,7 +2,7 @@
 
 Este proyecto es un portfolio web moderno y responsive para mostrar tus proyectos, experiencia y habilidades, desarrollado con **React**, **Vite** y **TailwindCSS**.
 
-[🌐 Ver sitio en producción](AQUÍ_TU_ENLACE_PORTFOLIO)
+[🌐 Ver sitio en producción](https://portfolio-ecru-six-42.vercel.app/)
 
 ---
 
