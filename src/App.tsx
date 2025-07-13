@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main>
+      <main className="pt-16">
         <Hero />
         <About />
         <Projects />

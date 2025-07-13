@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { Menu, X, Sun, Moon, Globe } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { useLanguage } from '../hooks/useLanguage';
@@ -6,24 +6,9 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const { isDark, toggleTheme } = useTheme();
   const { currentLanguage, changeLanguage } = useLanguage();
   const { t } = useTranslation();
-  const languageRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (languageRef.current && !languageRef.current.contains(event.target as Node)) {
-        setIsLanguageOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
 
   const navItems = [
     { name: t('nav.home'), href: '#home' },
@@ -39,7 +24,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+    <header className="fixed top-0 left-0 right-0 z-[9999] bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
       <div className="container-main">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -61,10 +46,6 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <div className="relative" ref={languageRef}>
-              {/* Eliminado el botón de selección de idioma del header */}
-            </div>
-
             <button
               onClick={toggleTheme}
               className="icon-btn"
