@@ -4,7 +4,7 @@ export const personalInfo: PersonalInfo = {
   name: "Jose Antonio García López",
   title: "Desarrollador front-end",
   description: "",
-  avatar: "/avatar.jpg",
+  avatar: "public/avatar.jpg",
   location: "España",
   contact: {
     email: "gl.josea90@gmail.com",
