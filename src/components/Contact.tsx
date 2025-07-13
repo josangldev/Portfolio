@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 
 const SERVICE_ID = 'service_92uq1hw';
-const TEMPLATE_ID = 'template_ykc26w8';
+const TEMPLATE_ID = 'template_scnzqk4';
 const USER_ID = 'SA3hYIWrb-IjPfEh0';
 
 const Contact = () => {

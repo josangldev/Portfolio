@@ -60,8 +60,8 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-4 pr-8 md:pr-0">
-            <div className="relative hidden md:flex" ref={languageRef}>
+          <div className="flex items-center space-x-4">
+            <div className="relative" ref={languageRef}>
               <button
                 onClick={() => setIsLanguageOpen(!isLanguageOpen)}
                 className="icon-btn space-x-1"
@@ -131,22 +131,7 @@ const Header = () => {
                 <div className="flex items-center space-x-2">
                   <Globe className="w-4 h-4 text-gray-500" />
                   <span className="text-sm text-gray-500">Idioma:</span>
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        changeLanguage(lang.code);
-                        setIsMenuOpen(false);
-                      }}
-                      className={`px-2 py-1 text-xs rounded ${
-                        currentLanguage === lang.code
-                          ? 'bg-primary-600 text-white'
-                          : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                      }`}
-                    >
-                      {lang.name}
-                    </button>
-                  ))}
+                  {/* Eliminado el botón de selección de idioma en móvil */}
                 </div>
               </div>
             </div>
