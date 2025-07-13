@@ -24,12 +24,12 @@ export const projects: Project[] = [
       es: "Sitio web informativo sobre festivales tradicionales y gastronomía japonesa, con modo claro/oscuro, diseño responsive y animaciones. Desarrollado con Vite y TailwindCSS.",
       en: "Informative website about traditional Japanese festivals and gastronomy, with dark/light mode, responsive design and animations. Built with Vite and TailwindCSS."
     },
-    image: "/src/assets/japan-home.webp",
+    image: "/japan-home.webp",
     images: [
-      "/src/assets/japan-home.webp",
-      "/src/assets/japan-about.webp",
-      "/src/assets/japan-events.webp",
-      "/src/assets/japan-comidas.webp"
+      "/japan-home.webp",
+      "/japan-about.webp",
+      "/japan-events.webp",
+      "/japan-comidas.webp"
     ],
     technologies: ["HTML", "Tailwind CSS", "JavaScript"],
     githubUrl: "https://github.com/josangldev/japon-web",
@@ -46,12 +46,12 @@ export const projects: Project[] = [
       es: "Pokédex interactiva de la región Kanto con estadísticas base, trivial de Pokémon y música de fondo. Inspirada en la Game Boy, con diseño retro, responsive y funcionalidades avanzadas.",
       en: "Interactive Pokédex of the Kanto region with base stats, Pokémon trivia and background music. Game Boy-inspired, retro design, responsive and advanced features."
     },
-    image: "/src/assets/pokemon-home.webp",
+    image: "/pokemon-home.webp",
     images: [
-      "/src/assets/pokemon-home.webp",
-      "/src/assets/pokemon-pokedex.webp",
-      "/src/assets/pokemon-about.webp",
-      "/src/assets/pokemon-trivial.webp"
+      "/pokemon-home.webp",
+      "/pokemon-pokedex.webp",
+      "/pokemon-about.webp",
+      "/pokemon-trivial.webp"
     ],
     technologies: ["HTML", "Sass", "JavaScript"],
     githubUrl: "https://github.com/josangldev/pokemon-kanto",
@@ -68,9 +68,9 @@ export const projects: Project[] = [
       es: "Gestor de tareas semanal con gráficos interactivos, modo claro/oscuro, traducción ES/EN y diseño responsive. Desarrollado con React, Vite, TailwindCSS y Recharts.",
       en: "Weekly task manager with interactive charts, light/dark mode, ES/EN translation and responsive design. Built with React, Vite, TailwindCSS and Recharts."
     },
-    image: "/src/assets/Dashboard-home.webp",
+    image: "/Dashboard-home.webp",
     images: [
-      "/src/assets/Dashboard-home.webp"
+      "/Dashboard-home.webp"
     ],
     technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/josangldev/dashboard",
@@ -87,9 +87,9 @@ export const projects: Project[] = [
       es: "Tienda online moderna y responsive con filtros por precio y tipo de ropa, carrito persistente, modo claro/oscuro y animaciones. Desarrollada con React, TypeScript, Vite y TailwindCSS.",
       en: "Modern and responsive online store with filters by price and clothing type, persistent cart, light/dark mode and animations. Built with React, TypeScript, Vite and TailwindCSS."
     },
-    image: "/src/assets/eshop-home.webp",
+    image: "/eshop-home.webp",
     images: [
-      "/src/assets/eshop-home.webp"
+      "/eshop-home.webp"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/josangldev/ecommerce",
@@ -106,10 +106,10 @@ export const projects: Project[] = [
       es: "Portfolio personal, responsive y optimizado, construido con React, TypeScript y Tailwind CSS. Incluye animaciones, modo oscuro, internacionalización, formulario de contacto funcional y una experiencia de usuario profesional.",
       en: "Personal portfolio, responsive and optimized, built with React, TypeScript and Tailwind CSS. Includes animations, dark mode, internationalization, functional contact form and a professional user experience."
     },
-    image: "/src/assets/portfolio-home.webp",
+    image: "/portfolio-home.webp",
     images: [
-      "/src/assets/portfolio-home.webp",
-      "/src/assets/portfolio-skills.webp"
+      "/portfolio-home.webp",
+      "/portfolio-skills.webp"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/josangldev/portfolio",
