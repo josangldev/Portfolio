@@ -60,8 +60,8 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-4">
-            <div className="relative" ref={languageRef}>
+          <div className="flex items-center space-x-4 pr-8 md:pr-0">
+            <div className="relative hidden md:flex" ref={languageRef}>
               <button
                 onClick={() => setIsLanguageOpen(!isLanguageOpen)}
                 className="icon-btn space-x-1"
