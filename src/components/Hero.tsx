@@ -75,7 +75,7 @@ const Hero = () => {
               {t('hero.contact')}
             </motion.button>
             <a
-              href="/CV_JoseAntonio_GarciaLopez_2025.docx"
+              href="/CV_JoseAntonio_GarciaLopez_2025.pdf"
               download
               className="btn-primary text-lg px-8 py-3 transition-transform duration-200 flex items-center justify-center"
               style={{ textDecoration: 'none' }}
