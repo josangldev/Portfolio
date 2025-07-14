@@ -42,7 +42,6 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
       <div className="container-main">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="text-2xl font-bold gradient-text">
               JosanglDev

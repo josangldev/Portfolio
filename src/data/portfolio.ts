@@ -1,4 +1,4 @@
-import type { PersonalInfo, Project, Skill, Experience } from '../types';
+import type { PersonalInfo, Project } from '../types';
 
 export const personalInfo: PersonalInfo = {
   name: "Jose Antonio García López",
@@ -115,29 +115,5 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/josangldev/portfolio",
     liveUrl: "https://portfolio-ecru-six-42.vercel.app/",
     featured: false
-  }
-];
-
-export const skills: Skill[] = [
-  { name: "HTML5", level: 85, category: "frontend", icon: "html" },
-  { name: "CSS3", level: 80, category: "frontend", icon: "css" },
-  { name: "Sass", level: 75, category: "frontend", icon: "sass" },
-  { name: "Tailwind CSS", level: 80, category: "frontend", icon: "tailwind" },
-  { name: "JavaScript", level: 85, category: "frontend", icon: "javascript" },
-  { name: "TypeScript", level: 70, category: "frontend", icon: "typescript" },
-  { name: "React", level: 75, category: "frontend", icon: "react" },
-  { name: "Git", level: 70, category: "other", icon: "git" },
-  { name: "Figma", level: 65, category: "other", icon: "figma" },
-];
-
-export const experience: Experience[] = [
-  {
-    id: "1",
-    company: "Conquer Blocks",
-    position: "Estudiante de Desarrollo Web",
-    description: "Formación intensiva en desarrollo web frontend, aprendiendo las mejores prácticas y tecnologías modernas del sector. Desarrollo de proyectos prácticos y colaboración en equipo.",
-    startDate: "2023-01",
-    current: true,
-    technologies: ["HTML", "CSS", "JavaScript", "React", "Git"]
   }
 ]; 
