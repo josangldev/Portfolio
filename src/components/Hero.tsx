@@ -4,9 +4,11 @@ import { personalInfo } from '../data/portfolio';
 import { Typewriter } from 'react-simple-typewriter';
 import { useTranslation } from 'react-i18next';
 
+// Componente principal de la sección de presentación (Hero)
 const Hero = () => {
   const { t } = useTranslation();
   
+  // Realiza scroll suave hasta la sección indicada
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

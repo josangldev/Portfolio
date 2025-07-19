@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Code } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
+// Componente principal de la sección sobre mí
 const About = () => {
   const { t } = useTranslation();
   

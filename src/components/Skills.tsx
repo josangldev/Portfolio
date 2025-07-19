@@ -14,6 +14,7 @@ const techIcons = [
   { icon: SiFigma, name: 'Figma' },
 ];
 
+// Componente principal de la sección de habilidades
 const Skills = () => {
   const { t } = useTranslation();
   

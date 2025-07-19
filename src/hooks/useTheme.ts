@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 
+// Hook para gestionar el tema oscuro/claro de la aplicación
 export const useTheme = () => {
   const [isDark, setIsDark] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Detecta la preferencia del sistema y la guarda en localStorage
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     const savedPreference = localStorage.getItem('darkMode');
@@ -23,6 +25,7 @@ export const useTheme = () => {
     setIsLoaded(true);
   }, []);
 
+  // Alterna entre modo oscuro y claro
   const toggleTheme = () => {
     const newDarkMode = !isDark;
     setIsDark(newDarkMode);

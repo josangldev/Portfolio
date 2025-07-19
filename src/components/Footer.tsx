@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
+// Componente principal del pie de página
 const Footer = () => {
   const { t } = useTranslation();
 

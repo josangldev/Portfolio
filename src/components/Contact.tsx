@@ -9,6 +9,7 @@ const SERVICE_ID = 'service_92uq1hw';
 const TEMPLATE_ID = 'template_scnzqk4';
 const USER_ID = 'SA3hYIWrb-IjPfEh0';
 
+// Componente principal de la sección de contacto
 const Contact = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ const Contact = () => {
   const [sending, setSending] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
 
+  // Maneja el envío del formulario de contacto y la integración con EmailJS
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSending(true);
@@ -44,6 +46,7 @@ const Contact = () => {
     ).finally(() => setSending(false));
   };
 
+  // Actualiza el estado del formulario cuando el usuario escribe
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,

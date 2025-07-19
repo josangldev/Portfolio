@@ -31,6 +31,7 @@ interface ProjectCardProps {
   t: (key: string) => string;
 }
 
+// Tarjeta individual para mostrar la información de un proyecto
 const ProjectCard: FC<ProjectCardProps> = function ProjectCard({ project, currentLanguage, t }) {
   const hasGallery = project.images && project.images.length > 1;
   const [mainImage, setMainImage] = useState<string>(
@@ -144,6 +145,7 @@ const ProjectCard: FC<ProjectCardProps> = function ProjectCard({ project, curren
   );
 };
 
+// Componente principal de la sección de proyectos
 const Projects = () => {
   const [filter, setFilter] = useState<'all' | 'featured'>('all');
   const { t, i18n } = useTranslation();

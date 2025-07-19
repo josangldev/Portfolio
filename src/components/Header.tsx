@@ -4,6 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 import { useLanguage } from '../hooks/useLanguage';
 import { useTranslation } from 'react-i18next';
 
+// Componente principal de la cabecera y navegación
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = () => {
   const languageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Cierra el selector de idioma si se hace clic fuera de él
     const handleClickOutside = (event: MouseEvent) => {
       if (languageRef.current && !languageRef.current.contains(event.target as Node)) {
         setIsLanguageOpen(false);
