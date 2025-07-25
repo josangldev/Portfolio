@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { SiHtml5, SiCss3, SiTailwindcss, SiSass, SiJavascript, SiTypescript, SiReact, SiGit, SiFigma } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiTailwindcss, SiSass, SiJavascript, SiTypescript, SiReact, SiAngular, SiGit, SiFigma } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 
 const techIcons = [
@@ -10,6 +10,7 @@ const techIcons = [
   { icon: SiJavascript, name: 'JavaScript' },
   { icon: SiTypescript, name: 'TypeScript' },
   { icon: SiReact, name: 'React' },
+  { icon: SiAngular, name: 'Angular' },
   { icon: SiGit, name: 'Git' },
   { icon: SiFigma, name: 'Figma' },
 ];
