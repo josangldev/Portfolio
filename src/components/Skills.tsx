@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { SiHtml5, SiCss3, SiTailwindcss, SiSass, SiJavascript, SiTypescript, SiReact, SiAngular, SiGit, SiFigma } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiTailwindcss, SiSass, SiJavascript, SiTypescript, SiReact, SiAngular,SiNodedotjs, SiMongodb, SiGit, SiFigma, SiJira, SiAmazon, SiGithub } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 
 const techIcons = [
@@ -11,8 +11,13 @@ const techIcons = [
   { icon: SiTypescript, name: 'TypeScript' },
   { icon: SiReact, name: 'React' },
   { icon: SiAngular, name: 'Angular' },
+  { icon: SiNodedotjs, name: 'Node' },
+  { icon: SiMongodb, name: 'MongoDB'},
   { icon: SiGit, name: 'Git' },
   { icon: SiFigma, name: 'Figma' },
+  { icon: SiJira, name: 'Jira' },
+  { icon: SiAmazon, name: 'AWS'},
+  { icon: SiGithub, name: 'GitHub'},
 ];
 
 // Componente principal de la sección de habilidades
@@ -31,7 +36,7 @@ const Skills = () => {
         >
           <h2 className="section-title">{t('skills.title')}</h2>
           <div className="flex flex-wrap justify-center gap-6">
-            {techIcons.filter(({ name }) => name !== 'Git' && name !== 'Figma').map(({ icon: Icon, name }, idx) => (
+            {techIcons.filter(({ name }) => name !== 'Git' && name !== 'Figma' && name !== 'Jira' && name !== 'AWS' && name !== 'GitHub').map(({ icon: Icon, name }, idx) => (
               <motion.div
                 key={name}
                 initial={{ opacity: 0, y: 30, scale: 0.7 }}
@@ -48,7 +53,7 @@ const Skills = () => {
           </div>
           <h3 className="section-title mt-32">{t('skills.tools')}</h3>
           <div className="flex flex-wrap justify-center gap-6 mt-6">
-            {[{ icon: SiGit, name: 'Git' }, { icon: SiFigma, name: 'Figma' }].map(({ icon: Icon, name }, idx) => (
+            {[{ icon: SiGit, name: 'Git' }, { icon: SiFigma, name: 'Figma' }, { icon: SiJira, name: 'Jira' }, { icon: SiAmazon, name: 'AWS' }, { icon: SiGithub, name: 'GitHub'}].map(({ icon: Icon, name }, idx) => (
               <motion.div
                 key={name}
                 initial={{ opacity: 0, y: 30, scale: 0.7 }}
